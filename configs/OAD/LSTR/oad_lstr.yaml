@@ -1,0 +1,24 @@
+DATA:
+  DATA_NAME: 'THUMOS'
+  DATA_ROOT: 'data/oad'
+  TRAIN_SESSION_SET: 'split_train'
+  TEST_SESSION_SET: 'split_test'
+
+INPUT:
+  MODALITY: 'visual'
+  VISUAL_FEATURE: 'skeleton_thumos'
+  MOTION_FEATURE: 'skeleton_thumos'
+  TARGET_PERFRAME: 'targets_thumos'
+
+MODEL:
+  MODEL_NAME: 'LSTR'
+
+DATA_LOADER:
+  BATCH_SIZE: 16
+  NUM_WORKERS: 0
+  PIN_MEMORY: False
+
+SOLVER:
+  NUM_EPOCHS: 10
+  OPTIMIZER: 'adam'
+  BASE_LR: 7e-05

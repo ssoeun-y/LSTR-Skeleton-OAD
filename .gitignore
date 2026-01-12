@@ -1,0 +1,11 @@
+# data & outputs
+data/
+checkpoints/
+
+# numpy / model files
+*.npy
+*.pt
+*.pth
+
+# archives
+*.zip
